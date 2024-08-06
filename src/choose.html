@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your Google Account</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+            color-scheme: light;
+            color: rgb(31,31,31);
+            letter-spacing: normal;
+            font-weight: 400;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #f0f4f9;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 28px;
+            width: 900px;
+            height: 384px;
+        }
+        .create{
+            font-size: 32px;
+            padding: 5px;
+        }
+        .enter{
+            font-size: 16px;
+            padding: 5px;
+            
+        }
+        label{
+            display: inline-block;
+            padding: 8px;
+            margin: 5px;
+            
+        }
+        input{
+            display: inline;
+            padding: 8px;
+            margin: 5px;
+            vertical-align: middle;
+        }
+        .right{
+            display: inline-block;
+            margin:20px;
+            align-items: center;
+            margin-top:5% ;
+        }
+        .left{
+            display: inline-block;
+            margin:20px;
+           
+        }
+        img{
+            width: 60px;
+            display: block;
+            margin:0;
+        }
+        p{
+            display: block;
+            margin: 0;
+            cursor:default;
+        }
+        .next{
+            margin:10px;
+            color: white;
+            border: none;
+            background-color:#0b57d0;
+            height: 35px;
+            width: 60px;
+            border-radius:20px ;
+            font-weight: 550px;
+            font-size: 14px;
+            font-stretch: 100%;
+            float:right;
+        }
+        .next:hover{
+            background-color: #0844a3;
+            cursor: pointer;
+        }
+
+        .language{
+            display: inline-block;
+            border: none;
+            margin: 12px;
+            background-color:#f0f4f9 ;
+            padding:8px;
+            border-radius: 3px;
+        }
+        .language:hover{
+            background-color: rgba(74, 77, 76, 0.09);
+            cursor: pointer;
+        }
+        ol{
+            align-items:center;
+            list-style: none;
+            display: inline;
+            
+        }
+        li{
+            align-items:center;
+            display: inline-block;
+           
+                }
+        li a{
+            font-family: sans-serif;
+            color-scheme: light;
+            color: rgb(31,31,31);
+            letter-spacing: normal;
+            font-weight: 400;
+            font-size: 12px;
+            text-decoration:none ;
+            padding: 8px;
+            border-radius: 3px;
+        }
+        li a:hover{
+            background-color: rgba(74, 77, 76, 0.09);
+        }
+        .bottom{
+           width: 900px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+        .forgot{
+            color: rgb(11, 87, 208);
+            text-decoration: none;
+            margin:10px;
+            padding:5px;
+        }
+        .guest{
+            padding: 5px;
+            margin: 10px;
+            margin-top:50px;
+        }
+        .learn{
+            
+            color: rgb(11, 87, 208);
+            text-decoration: none;
+    
+        }
+        .createb{
+            margin:10px;
+            color: rgb(11, 87, 208);
+            border: none;
+            background-color:white;
+            height: 35px;
+            width: 160px;
+            border-radius:20px ;
+            font-weight: 500;
+            font-size: 14px;
+            font-stretch: 100%;
+            float:right;
+        }
+        a:hover{
+            background-color: #0b57d01c;
+            border-radius: 2px;
+        }
+        .createb:hover{
+            background-color: #0b57d01c;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            
+        <div class="left">
+            <img src="../image/google.webp" alt="google">
+            <p class="create">Choose your Gmail address</p>
+            <p class="enter">Pick a Gmail address or create your own</p>
+        </div>
+        <div class="right">
+            <label><input type="radio">ra0853121@gmail.com</label><hr>
+            <label><input type="radio">rka44235@gmail.com</label><hr>
+            <label><input type="radio">Create your own Gmail address</label><hr>
+        <button class="next" onclick="window.location.href='password.html'">Next</button><button class="createb" >Use your existing email</button>
+        </div>
+
+        </div>
+     
+        <div class="bottom">
+            
+            <select name="lang" id="lang" class="language">
+                <option value="eng">English (United Kingdom)</option>
+                <option value="tamil">Tamil</option>
+                <option value="telugu">Telugu</option>
+                <option value="hindi">Hindi</option>
+                <option value="french">French</option>
+            </select>
+        
+       
+                <ol>
+                   <li><a href="#">Help</a></li>
+                   <li><a href="#">Privacy</a></li>
+                   <li><a href="#">Terms</a></li> 
+                </ol>
+            
+            </div>
+
+    </div>
+    
+</body>
+</html>

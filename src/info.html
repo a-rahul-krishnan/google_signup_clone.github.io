@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your Google Account</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+            color-scheme: light;
+            color: rgb(31,31,31);
+            letter-spacing: normal;
+            font-weight: 400;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #f0f4f9;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 28px;
+            width: 900px;
+            height: 384px;
+        }
+        .create{
+            font-size: 32px;
+            padding: 5px;
+        }
+        .enter{
+            font-size: 16px;
+            padding: 5px;
+            
+        }
+        input{
+            display:block ;
+            margin:10px;
+            height:28px;
+            width: 376.5px;
+            border-radius: 4px;
+            text-align: left;
+            font-size: 16px;
+            border: none;
+            border:1px solid darkgrey; 
+            outline:none;
+            color: rgb(31,31,31);
+            
+            padding:5px;
+        }
+        input:hover{
+            border:1px solid #0b57d0;
+        }
+        .right{
+            display: inline-block;
+            margin:20px;
+            align-items: center;
+            margin-top:5% ;
+        }
+        .left{
+            display: inline-block;
+            margin:20px;
+           
+        }
+        img{
+            width: 60px;
+            display: block;
+            margin:0;
+        }
+        p{
+            display: block;
+            margin: 0;
+            cursor:default;
+        }
+        .next{
+            margin:10px;
+            color: white;
+            border: none;
+            background-color:#0b57d0;
+            height: 35px;
+            width: 60px;
+            border-radius:20px ;
+            font-weight: 550px;
+            font-size: 14px;
+            font-stretch: 100%;
+            float:right;
+        }
+        .next:hover{
+            background-color: #0844a3;
+            cursor: pointer;
+        }
+
+        .language{
+            display: inline-block;
+            border: none;
+            margin: 12px;
+            background-color:#f0f4f9 ;
+            padding:8px;
+            border-radius: 3px;
+        }
+        .language:hover{
+            background-color: rgba(74, 77, 76, 0.09);
+            cursor: pointer;
+        }
+        ol{
+            align-items:center;
+            list-style: none;
+            display: inline;
+            
+        }
+        li{
+            align-items:center;
+            display: inline-block;
+           
+                }
+        li a{
+            font-family: sans-serif;
+            color-scheme: light;
+            color: rgb(31,31,31);
+            letter-spacing: normal;
+            font-weight: 400;
+            font-size: 12px;
+            text-decoration:none ;
+            padding: 8px;
+            border-radius: 3px;
+        }
+        li a:hover{
+            background-color: rgba(74, 77, 76, 0.09);
+        }
+        .bottom{
+           width: 900px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+        .forgot{
+            color: rgb(11, 87, 208);
+            text-decoration: none;
+            padding:5px;
+            margin-top: 3px;
+            display: inline-block;
+        }
+        .guest{
+            padding: 5px;
+            margin: 10px;
+            margin-top:50px;
+        }
+        .learn{
+            
+            color: rgb(11, 87, 208);
+            text-decoration: none;
+           
+    
+        }
+        .createb{
+            margin:10px;
+            color: rgb(11, 87, 208);
+            border: none;
+            background-color:white;
+            height: 35px;
+            width: 120px;
+            border-radius:20px ;
+            font-weight: 500;
+            font-size: 14px;
+            font-stretch: 100%;
+            float:right;
+        }
+        a:hover{
+            background-color: #0b57d01c;
+            border-radius: 2px;
+        }
+        .createb:hover{
+            background-color: #0b57d01c;
+            
+        }
+        .month{
+            border-radius: 5px;
+            height: 58px;
+            width:125.5px;
+            border: 1px solid grey;
+            display: inline;
+
+        }
+        .day{
+            border-radius: 5px;
+            height: 58px;
+            width:125.5px;
+            padding: 0 5px 0 5px ;
+            border: 1px solid grey;
+            display: inline;
+        }
+        .day::placeholder {
+            color: black; 
+            opacity: 1;
+            font-size: 13.33px;
+            padding:3px;
+            color-scheme: light;
+            font-weight: 100;
+            
+        }
+        .year::placeholder {
+            color: black; 
+            opacity: 1; 
+            font-size: 13.33px;
+            padding:3px;
+            color-scheme: light;
+            font-weight: 100;
+        }
+        .year{
+            border-radius: 5px;
+            height: 58px;
+            padding: 0 5px 0 5px ;
+            margin: 0;
+            width:125.5px;
+            border: 1px solid grey;
+            display: inline;
+        }
+        .gender{
+            border-radius: 5px;
+            height: 58px;
+            width:430px;
+            border: 1px solid grey;
+            display: block;
+        }
+        select:hover{
+            border: 1px solid #0b57d0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            
+        <div class="left">
+            <img src="../image/google.webp" alt="google">
+            <p class="create">Basic information</p>
+            <p class="enter">Enter your birthday and gender</p>
+        </div>
+        <div class="right">
+            <form action="choose.html">
+            <select class="month">
+                <option value="" disabled selected >Month</option>
+                <option value="">January</option>
+                <option value="">Feburary</option>
+                <option value="">March</option>
+                <option value="">April</option>
+                <option value="">May</option>
+                <option value="">June</option>
+                <option value="">July</option>
+                <option value="">Augest</option>
+                <option value="">September</option>
+                <option value="">October</option>
+                <option value="">November</option>
+                <option value="">December</option>
+            </select>
+            <input type="text" placeholder="Day" class="day">
+            <input type="text" placeholder="Year" class="year">
+            <select  class="gender">
+                <option value="" disabled selected>Gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Rather not say</option>
+            </select>
+            <a href="" class="forgot">Why we ask for birthday and gender</a>
+            <button type="submit" class="next">Next</button>
+            
+        </form>
+       
+        </div>
+
+        </div>
+     
+        <div class="bottom">
+            
+            <select name="lang" id="lang" class="language">
+                <option value="eng">English (United Kingdom)</option>
+                <option value="tamil">Tamil</option>
+                <option value="telugu">Telugu</option>
+                <option value="hindi">Hindi</option>
+                <option value="french">French</option>
+            </select>
+        
+       
+                <ol>
+                   <li><a href="#">Help</a></li>
+                   <li><a href="#">Privacy</a></li>
+                   <li><a href="#">Terms</a></li> 
+                </ol>
+            
+            </div>
+
+    </div>
+    
+</body>
+</html>
